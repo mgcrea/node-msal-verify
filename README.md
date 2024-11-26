@@ -15,8 +15,8 @@
     <img src="https://img.shields.io/npm/l/@mgcrea/msal-verify.svg?style=for-the-badge" alt="npm license" />
   </a>
   <br />
-  <a href="https://github.com/mgcrea/node-msal-verify/actions/workflows/main.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/mgcrea/node-msal-verify/main.yml?style=for-the-badge&branch=master" alt="build status" />
+  <a href="https://github.com/mgcrea/node-msal-verify/actions/workflows/main.yaml">
+    <img src="https://img.shields.io/github/actions/workflow/status/mgcrea/node-msal-verify/main.yaml?style=for-the-badge&branch=master" alt="build status" />
   </a>
   <a href="https://depfu.com/github/mgcrea/node-msal-verify">
     <img src="https://img.shields.io/depfu/dependencies/github/mgcrea/node-msal-verify?style=for-the-badge" alt="dependencies status" />
