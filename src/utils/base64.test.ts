@@ -34,13 +34,18 @@ describe("decodeBase64Url", () => {
   it("should handle empty string by throwing an assertion error", () => {
     const base64Url = "";
     expect(() => decodeBase64Url(base64Url)).toThrowError(
-      new assert.AssertionError({ message: "Invalid base64UrlString" }),
+      new assert.AssertionError({
+        message: "Invalid base64UrlString",
+        expected: true,
+        operator: "==",
+        actual: "",
+      }),
     );
   });
 
   it("should handle undefined input by throwing an assertion error", () => {
     expect(() => decodeBase64Url(undefined)).toThrowError(
-      new assert.AssertionError({ message: "Invalid base64UrlString" }),
+      new assert.AssertionError({ message: "Invalid base64UrlString", expected: true, operator: "==" }),
     );
   });
 

@@ -17,7 +17,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "msal-verify": "./dist/bin/cli.cjs"
+    "msal-verify": "./dist/cli.cjs"
   },
   "files": [
     "dist"
@@ -25,7 +25,7 @@
   "scripts": {
     "start": "tsx src/index.ts",
     "cli": "tsx src/bin/cli.ts",
-    "dev": "tsx watch --trace-deprecation --inspect src/index.ts",
+    "dev": "vitest --watch",
     "dev:cli": "tsx watch --trace-deprecation --inspect src/bin/cli.ts",
     "build": "tsup",
     "preview": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
@@ -33,32 +33,32 @@
     "check": "tsc --noEmit",
     "lint": "eslint src/ test/",
     "spec": "vitest --run",
-    "test": "npm run lint && npm run typecheck && npm run spec",
+    "test": "npm run lint && npm run check && npm run spec",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "zod": "^3.23.8"
+    "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@mgcrea/eslint-config-node": "^0.12.19",
-    "@microsoft/api-extractor": "^7.48.0",
-    "@tsconfig/node-lts": "^22.0.0",
+    "@mgcrea/eslint-config-node": "^0.12.22",
+    "@microsoft/api-extractor": "^7.50.1",
+    "@tsconfig/node-lts": "^22.0.1",
     "@tsconfig/strictest": "^2.0.5",
     "@types/eslint": "^9.6.1",
-    "@types/jsonwebtoken": "^9.0.7",
-    "@types/node": "^22.9.3",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.13.5",
     "@types/pem-jwk": "^2.0.2",
-    "eslint": "^9.15.0",
+    "eslint": "^9.21.0",
     "jsonwebtoken": "^9.0.2",
     "pem-jwk": "^2.0.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.5.2",
     "prettier-plugin-organize-imports": "^4.1.0",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
-    "tsup": "^8.3.5",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2",
-    "vite-tsconfig-paths": "^5.1.3",
-    "vitest": "^2.1.9"
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.0.7"
   }
 }
